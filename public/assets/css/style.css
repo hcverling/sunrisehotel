@@ -1,0 +1,310 @@
+body{
+    background-color: #f7ebde;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    min-height: 100vh;
+    margin:0;
+    position: relative;
+}
+
+.popup{
+    display: none;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    padding: 20px;
+    z-index: 9999;
+    width:800px;
+    height:300px;
+}
+
+.close{
+    color:#AAA;
+    float:right;
+    font-size:25px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus{
+    color:#000;
+    cursor:pointer;
+}
+
+
+
+.left-navigation a{
+    text-decoration:none !important;
+    color:inherit !important;
+}
+
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding:20px;
+}
+
+
+
+
+.header{
+    width:100%;
+    height: auto;
+    border-top: 10px solid #333;
+    position: fixed;
+    background-color: #f7ebde;
+    z-index: 998;
+}
+
+
+
+.header .logo img{
+    width: 200px;
+}
+
+.navigation{
+    background-color: #333;
+}
+
+.navigation a{
+    color:#FFFFFF;
+}
+
+.navigation a.active{
+   color:#fcb842 !important; 
+}
+
+.navigation a:hover{
+    color:#fcb842 !important; 
+    transition: 0.3s;
+}
+
+.content{
+    background-color: #f2f2f2;
+    padding-top:260px;
+    padding-bottom:20px;
+}
+
+.main-banner{
+    width:100%;
+}
+
+.main-banner img{
+    width: 100%;
+    
+}
+
+.gap{
+    margin-top:10px;
+}
+
+.gallery{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap:10px;
+}
+
+.gallery-item{
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius:5px;
+    box-shadow:0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #FFF;
+}
+
+.gallery-item img{
+    width:100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img{
+    transform: scale(1.1); /* Memberikan efek zoom pada saat hover */
+}
+
+.room-name{
+    padding-top:20px;
+    padding-left:20px;
+}
+
+.room-description{
+    padding-top:10px;
+    padding-left:20px;
+    padding-bottom:20px;
+}
+
+.reservation form{
+    padding:20px;
+    border-radius: 5px;
+    background-color: #FFF;
+}
+
+input[type=text], input[type=date], select, textarea{
+    width: 100%;
+    padding:15px;
+   
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius:5px;
+    box-sizing: border-box;
+}
+
+input[type=submit]{
+    width:150px;
+    background-color: #fcb842;
+    color:#FFF;
+    padding: 15px;
+    margin: 8px;
+    border:none;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+input[type=submit]:hover{
+    background-color: #45a049;
+}
+
+
+
+.vertical-center{
+    align-items: center;
+}
+
+
+.side-bar{
+    padding-right:15px;
+}
+
+
+.left-navigation ul{
+    list-style: none;
+    margin-left: -40px;
+   
+}
+
+
+
+.left-navigation ul li{
+    padding: 15px;
+    background-color: #CCCCCC;
+    margin-bottom: 5px;
+    border-radius: 5px;
+   
+}
+
+.left-navigation ul li:hover{
+    padding: 15px;
+    background-color: #CCCCCC;
+    margin-bottom: 5px;
+    border-radius: 5px;
+   
+}
+
+.left-navigation ul li a{
+    display: block;
+}
+
+.left-navigation ul li:hover{
+    background-color: #fcb842;
+    color:#FFFFFF;
+    transition: 0.3s;
+
+}
+
+
+
+
+.gallery-container img{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+    padding-bottom: 10px;
+}
+
+figure {
+    margin: 0;
+ }
+
+ figure h2{
+    padding-top:0;
+    padding-bottom: 10px;
+    text-align: left;
+    padding-left: 0;
+
+ }
+
+ figure{
+    padding-bottom: 10px;
+ }
+
+ .gallery-container {
+   /*display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 10px;
+   grid-template-rows: masonry;*/
+   column-count: 3;
+    column-gap: 20px 20px;
+    width: 1200px;
+}
+
+.footer{
+    background-color: #f7ebde;
+}
+
+.footer .logo img{
+    width: 200px;
+}
+
+.p-20{
+    padding:20px;
+}
+
+/*.row .item {
+    background-color: lightseagreen;
+    padding: 20px;
+    color: white;
+   
+}*/
+
+@media only screen and (max-width:600px){
+    .logo{
+        text-align: center;
+    }
+
+    .gallery{
+        display: block;
+    }
+
+    .gallery-item{
+        width: 100%;
+        margin-bottom:10px;
+    }
+
+    input[type=text], input[type=date], select, textarea{
+        margin:0;
+        margin-bottom: 8px;
+       
+    }
+    
+    input[type=submit]{
+        margin:0;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    .navbar-toggler{
+        background-color: #FFFFFF !important;
+    }
+
+    .content{
+        background-color: #f2f2f2;
+        padding-top:330px;
+        padding-bottom:20px;
+    }
+
+
+}
